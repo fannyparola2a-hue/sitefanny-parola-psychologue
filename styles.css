@@ -61,11 +61,7 @@
     height:auto;
     object-fit:contain;
   }
-  @media (max-width: 600px){
-    .brand-logo{
-      width:56px;
-    }
-  }
+  
   
   .brand-text{ display:flex; flex-direction:column; line-height:1.1; }
   .brand-name{ font-weight:900; letter-spacing:.2px; }
@@ -495,10 +491,4 @@
 }
 
 
-/* Logo plus grand sur mobile */
-@media (max-width: 768px) {
-  .logo {
-    width: 160px;
-    height: auto;
-  }
-}
+
