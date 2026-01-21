@@ -492,3 +492,26 @@
 
 
 
+/* ===== FIX LOGO MOBILE (évite l’écrasement par flex) ===== */
+.brand-logo{
+  flex-shrink: 0;      /* le logo ne rétrécit plus */
+}
+
+@media (max-width: 768px){
+  .header-inner{
+    flex-direction: column;   /* logo au-dessus, menu en dessous */
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .nav{
+    justify-content: flex-start;
+    width: 100%;
+  }
+
+  .brand-logo{
+    width: 252px;   /* même taille que PC (tu peux mettre 220 si tu veux un peu moins) */
+    height: auto;
+  }
+}
+
