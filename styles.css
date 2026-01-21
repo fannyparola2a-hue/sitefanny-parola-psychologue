@@ -490,55 +490,9 @@
   scroll-margin-top: var(--anchor-offset);
 }
 
-
-
-/* ===== FIX LOGO MOBILE (évite l’écrasement par flex) ===== */
+/* Sécurité : empêche juste le logo de se faire écraser, sans changer le desktop */
 .brand-logo{
-  flex-shrink: 0;      /* le logo ne rétrécit plus */
-}
-
-
-
-  .nav{
-    justify-content: flex-start;
-    width: 100%;
-  }
-
-  .brand-logo{
-    width: 252px;   /* même taille que PC (tu peux mettre 220 si tu veux un peu moins) */
-    height: auto;
-  }
-}
-/* ===== HEADER MOBILE : LOGO + MENU SUR LA MÊME LIGNE ===== */
-@media (max-width: 900px){
-
-  .header-inner{
-    flex-direction: row;      /* RESTE SUR UNE LIGNE */
-    align-items: center;
-    gap: 12px;
-  }
-
-  .brand{
-    flex-shrink: 0;           /* le logo ne rétrécit pas */
-  }
-
-  .brand-logo{
-    width: 200px;             /* ajuste si besoin (180–220) */
-    height: auto;
-  }
-
-  .nav{
-    flex: 1;                  /* le menu prend l’espace restant */
-    justify-content: flex-end;
-    flex-wrap: nowrap;        /* pas de retour à la ligne */
-  }
-
-  .nav a,
-  .dropbtn{
-    white-space: nowrap;
-    padding: 8px 10px;
-    font-size: 14.5px;
-  }
+  flex-shrink: 0;
 }
 
 
