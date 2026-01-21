@@ -497,12 +497,7 @@
   flex-shrink: 0;      /* le logo ne rétrécit plus */
 }
 
-@media (max-width: 768px){
-  .header-inner{
-    flex-direction: column;   /* logo au-dessus, menu en dessous */
-    align-items: flex-start;
-    gap: 10px;
-  }
+
 
   .nav{
     justify-content: flex-start;
@@ -514,4 +509,36 @@
     height: auto;
   }
 }
+/* ===== HEADER MOBILE : LOGO + MENU SUR LA MÊME LIGNE ===== */
+@media (max-width: 900px){
+
+  .header-inner{
+    flex-direction: row;      /* RESTE SUR UNE LIGNE */
+    align-items: center;
+    gap: 12px;
+  }
+
+  .brand{
+    flex-shrink: 0;           /* le logo ne rétrécit pas */
+  }
+
+  .brand-logo{
+    width: 200px;             /* ajuste si besoin (180–220) */
+    height: auto;
+  }
+
+  .nav{
+    flex: 1;                  /* le menu prend l’espace restant */
+    justify-content: flex-end;
+    flex-wrap: nowrap;        /* pas de retour à la ligne */
+  }
+
+  .nav a,
+  .dropbtn{
+    white-space: nowrap;
+    padding: 8px 10px;
+    font-size: 14.5px;
+  }
+}
+
 
