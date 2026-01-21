@@ -494,3 +494,11 @@
   scroll-margin-top: var(--anchor-offset);
 }
 
+
+/* Logo plus grand sur mobile */
+@media (max-width: 768px) {
+  .logo {
+    width: 160px;
+    height: auto;
+  }
+}
