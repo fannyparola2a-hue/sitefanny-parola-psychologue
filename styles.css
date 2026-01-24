@@ -496,3 +496,39 @@
 }
 
 
+/* =========================
+   HEADER MOBILE PROPRE
+   ========================= */
+@media (max-width: 768px){
+
+  .header-inner{
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 0;
+  }
+
+  .brand{
+    justify-content: center;
+    min-width: auto;
+  }
+
+  .brand-logo{
+    width: 200px;   /* équilibré mobile */
+    max-width: 90vw;
+  }
+
+  .nav{
+    width: 100%;
+    justify-content: center;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+
+  .nav a,
+  .dropbtn{
+    font-size: 14px;
+    padding: 6px 10px;
+  }
+}
+
